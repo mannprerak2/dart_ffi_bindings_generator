@@ -10,3 +10,9 @@ dev_dependencies:
   dart_ffi_bindings_generator: 
     path: '../'
 
+dart_ffi_bindings_generator:
+  libclang_dylib: './tool'
+  headers:
+    - 'a.h'
+    - 'b.h'
+    - 'c.h'
