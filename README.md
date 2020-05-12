@@ -19,6 +19,9 @@ LibClang is used to parse C header files to extract all the Functions, Structs, 
 - `tool` - Contains script to generate LibClang bindings using FFI tool (dev use only).
 - `example` - Project to demostrate generatiion of bindings for given C header files.
 
+## Building -
+The dynamic library must be generated for this to work,
+inside this package, use `build.sh` to generate dynamic library for linux
 
 ### Configurations -
 
