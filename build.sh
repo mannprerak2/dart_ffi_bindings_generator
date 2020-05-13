@@ -1,3 +1,4 @@
+# build script to generate Dynamic library for libclang wrapper and generate bindings
 set -e
 
 printf "Building Dynamic Library for libclang wrapper: "

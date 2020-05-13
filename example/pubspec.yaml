@@ -11,8 +11,5 @@ dev_dependencies:
     path: '../'
 
 dart_ffi_bindings_generator:
-  libclang_dylib: './tool'
-  headers:
-    - 'a.h'
-    - 'b.h'
-    - 'c.h'
+  libclang_dylib: '../tool/wrapped_libclang/libwrapped_clang.so'
+  headers: 'a.h'

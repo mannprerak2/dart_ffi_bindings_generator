@@ -1,6 +1,6 @@
 // Executable script to be called by user to generate bindings for some C library
 import 'dart:io';
-import 'package:dart_ffi_bindings_generator/src/config.dart';
+import 'package:dart_ffi_bindings_generator/src/config_provider/config.dart';
 import 'package:yaml/yaml.dart' as yaml;
 
 void main() {

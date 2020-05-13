@@ -10,7 +10,7 @@ Generate FFI bindings for Dart directly from C header files
 - Run from root of project - `pub run dart_ffi_bindings_generator:generate`
 
 ## How will bindings be generated -
-LibClang is used to parse C header files to extract all the Functions, Structs, etc. This data is stored as list of objects, which is then passed on to ffi_tool, which then converts these to actual bindings.
+LibClang is used to parse C header files to extract all the Functions, Structs, etc. This data is stored as list of objects, which is then passed on to code_generator(modified [ffi_tool](https://pub.dev/packages/ffi_tool)), which then converts these to actual bindings.
 
 ## Project Structure -
 
@@ -19,8 +19,10 @@ LibClang is used to parse C header files to extract all the Functions, Structs, 
 - `tool` - Contains script to generate LibClang bindings using FFI tool (dev use only).
 - `example` - Project to demostrate generatiion of bindings for given C header files.
 
+- `lib/src/code_generator` - Contains code from FFI_TOOL (modified as required)
+
 ## Building -
-The dynamic library must be generated for this to work,
+A dynamic library for must be generated for this to work,
 inside this package, use `build.sh` to generate dynamic library for linux
 
 ### Configurations -
