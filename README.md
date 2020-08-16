@@ -1,3 +1,6 @@
+> ## This project has been discontinued, please look at ffigen => https://github.com/dart-lang/ffigen
+
+
 # dart_ffi_bindings_generator
 
 Generate FFI bindings for Dart directly from C header files
